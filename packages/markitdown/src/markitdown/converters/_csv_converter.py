@@ -61,7 +61,6 @@ class CsvConverter(DocumentConverter):
             ) from _dependency_exc_info[1].with_traceback(
                 _dependency_exc_info[2]
             )  # type: ignore[union-attr]
-
         # Read the file content
         if stream_info.charset:
             content = file_stream.read().decode(stream_info.charset)
