@@ -148,7 +148,11 @@ GENERAL_TEST_VECTORS = [
             "| 佐藤太郎 | 30 | 東京 |",
             "| 三木英子 | 25 | 大阪 |",
             "| 髙橋淳 | 35 | 名古屋 |",
+<<<<<<< HEAD
             "| 鈴木一郎 | 28\\r\\n\\r\\ncellB5 | 福岡 |",
+=======
+            "| 鈴木一郎 | 28\\r\\n\\r\\ncellB5 | 福岡 |",,
+>>>>>>> eb5d6b7c8d0af21a3baf998ecfd3f1876b3d4acf
         ],
         must_not_include=[],
     ),
