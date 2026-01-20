@@ -61,7 +61,7 @@ class CsvConverter(DocumentConverter):
             ) from _dependency_exc_info[1].with_traceback(
                 _dependency_exc_info[2]
             )  # type: ignore[union-attr]
-            
+
         # Read the file content
         if stream_info.charset:
             content = file_stream.read().decode(stream_info.charset)
@@ -76,7 +76,7 @@ class CsvConverter(DocumentConverter):
 
         html_content = df.to_html(index=False)
         md_content = self._html_converter.convert_string(
-                html_content, **kwargs
-            ).markdown.strip()
+            html_content, **kwargs
+        ).markdown.strip()
 
         return DocumentConverterResult(markdown=md_content.strip())
